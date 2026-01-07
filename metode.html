@@ -1,0 +1,144 @@
+<!-- ================== LINK CSS & FONT ================== -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<!-- ================== CSS KUSTOM ================== -->
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        background: #f8f9fa;
+        color: #333;
+    }
+
+    section {
+        padding: 40px;
+        background: #fff;
+        margin: 30px auto;
+        width: 90%;
+        max-width: 1000px;
+        border-radius: 15px;
+        box-shadow: 0px 4px 15px rgba(0,0,0,0.08);
+    }
+
+    h2, h3, h4 {
+        color: #2c3e50;
+        font-weight: 600;
+    }
+
+    p {
+        line-height: 1.7;
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    ul {
+        margin-left: 25px;
+        line-height: 1.7;
+    }
+</style>
+
+<!-- ================== KONTEN METODE ================== -->
+<section class="wow fadeInUp" data-wow-delay="0.1s">
+
+    <h2 class="text-uppercase mb-4 text-center">
+        Metode Penelitian dan Pengumpulan Data
+    </h2>
+
+    <p>
+        Penelitian ini menggunakan metode deskriptif kuantitatif dengan tujuan untuk 
+        menggambarkan kondisi luas panen, produksi, dan produktivitas kacang tanah di 
+        Kabupaten Semarang. Data diperoleh dari publikasi resmi Badan Pusat Statistik (BPS), 
+        sehingga akurat, valid, dan dapat dipertanggungjawabkan.
+    </p>
+
+    <h4 class="text-primary mt-4">1. Metode Penelitian</h4>
+    <p>
+        Pendekatan penelitian yang digunakan adalah metode deskriptif. Data yang diperoleh dari 
+        BPS dianalisis dan disajikan dalam bentuk visualisasi peta digital agar kondisi 
+        pertanian per kecamatan dapat dipahami secara lebih jelas dan sistematis.
+    </p>
+
+    <h4 class="text-primary mt-4">2. Metode Pengumpulan Data</h4>
+    <p>
+        Pengumpulan data dilakukan menggunakan metode dokumentasi, yaitu mengambil data luas panen, 
+        produksi, dan produktivitas kacang tanah dari dokumen resmi BPS Kabupaten Semarang, yaitu:
+    </p>
+
+    <ul>
+        <li>Tabel statistik pertanian kacang tanah per kecamatan</li>
+        <li>Publikasi pertanian tahunan</li>
+        <li>Data produktivitas komoditas tanaman pangan</li>
+    </ul>
+
+    <h4 class="text-primary mt-4">3. Teknik Pengolahan Data</h4>
+    <p>
+        Setelah data diperoleh, pengolahan dilakukan melalui langkah-langkah berikut:
+    </p>
+    <ul>
+        <li>Rekapitulasi dan penyesuaian format data</li>
+        <li>Pembersihan data (data cleaning)</li>
+        <li>Konversi data ke format tabel untuk QGIS</li>
+        <li>Menggabungkan (join) data statistik ke peta batas kecamatan</li>
+    </ul>
+
+    <h4 class="text-primary mt-4">4. Metode Pemetaan</h4>
+    <p>
+        Pemetaan dilakukan menggunakan QGIS dengan teknik peta tematik (choropleth map) 
+        berdasarkan nilai luas panen, produksi, atau produktivitas. Peta kemudian diekspor ke 
+        dalam format web map menggunakan plugin qgis2web.
+    </p>
+
+    <h4 class="text-primary mt-4">5. Penyajian Data pada Website</h4>
+    <p>
+        Data yang telah diolah ditampilkan dalam website menggunakan HTML, CSS, dan JavaScript. 
+        Konten yang disajikan meliputi:
+    </p>
+    <ul>
+        <li>Peta interaktif panen kacang tanah</li>
+        <li>Tabel data resmi dari BPS</li>
+        <li>Informasi detail per kecamatan</li>
+    </ul>
+
+</section>
+
+<!-- ================== JAVASCRIPT FILES ================== -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+
+<script>
+    new WOW().init();
+</script>
+
+<!-- ================== END ================== -->
